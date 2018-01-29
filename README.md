@@ -2,8 +2,8 @@
 
 * Host:
 
-sudo apt-get install gcc-4.9-arm-linux-gnueabihf
-sudo apt-get install g++-4.9-arm-linux-gnueabihf
++sudo apt-get install gcc-4.9-arm-linux-gnueabihf
++sudo apt-get install g++-4.9-arm-linux-gnueabihf
 
 * if package not found (on ubuntu 17 or later), try this
 
