@@ -40,7 +40,7 @@ Makefile:
 + LDFLAGS	+= -L/usr/include
 
 #Library libs
-LDLIBS	+=	-lpthread				\
++ LDLIBS	+=	-lpthread				\
 		-lmosquitto				\
 		-lmosquittopp				\
 		-lrt					\
