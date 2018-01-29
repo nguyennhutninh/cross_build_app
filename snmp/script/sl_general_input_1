@@ -1,0 +1,10 @@
+#!/bin/bash
+if [ "$1" = "-g" ]
+then
+echo .1.3.6.1.2.1.25.1.2.3.1
+echo gauge
+IN_FILE="/run/fpt_gateway/snmp/sl_sensors.txt"
+VALUE=$(/bin/cat $IN_FILE | /usr/bin/awk 'FNR == 7 {print}')
+echo $VALUE
+fi
+exit 0

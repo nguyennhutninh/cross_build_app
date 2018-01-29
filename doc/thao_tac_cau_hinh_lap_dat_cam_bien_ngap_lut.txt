@@ -1,0 +1,27 @@
+MÔ Tả:
+
+mỗi cảm biến nước có một địa chỉ IP: 1:1:1:12
+cảm biến nước sẽ trả về data có 2 loại: 
+1. trạng thái bắt đầu ngập (value: 1) / trạng thái hết ngập (value: 2) : khi thay đổi trạng thái, cảm biến sẽ gửi trạng thái đó 7 lần, mỗi lần cách nhau 30s.
+2. trạng thái pin sẽ đc cập nhật mỗi 24H (một ngày cập nhật một lần) đây cũng là thông tin keepalive của sensor.
+
+
+các bước cấu hình cho cảm biến nước:
+<CẢM BIẾN>
+I> cấu hình internal sensor.
+1.cấu hình ngưỡng ngập và không ngập. (phải cấu hình && test trước khi realse ra sản phẩm).
+
+II> cấu hình mạng.
+1. cấu hình static IP cho sensor.
+2. cấu hình host IP (host IP là địa chỉ đích mà sensor muốn gửi data đến).
+
+<LẮP ĐẶT>
+<trước khi ra thực địa>
+1. người lắp đặt sẽ add node sensor trên web monitor.
+
+<khi ra thực địa>
+sau khi đến chổ cần lắp sensor.
+1. người lắp đặt sẽ nhấn nút ping tới host, để join vào host. khi join vào host OK, sẽ có LED báo. (động tác này sẽ test mặt truyền dẫn giữa sensor đến host).
+2. người lắp đặt nhúng sensor vào nước và xem trên bản đồ đã chuyển màu tại điểm cần lắp.
+3. cố định sensor vào chổ lắp.
+

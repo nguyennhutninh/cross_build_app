@@ -1,0 +1,8 @@
+echo cp snmpd.conf /etc/snmp/
+cp snmpd.conf /etc/snmp/
+
+echo cp script/* /usr/local/bin/
+cp script/* /usr/local/bin/
+
+echo service snmpd restart
+service snmpd restart
