@@ -1,4 +1,0 @@
-step 1: dd if=u-boot-sunxi-with-spl.bin of=/dev/mmcblk1 bs=1024 seek=8
-note: file u-boot-sunxi-with-spl.bin exist in ../resources folder.
-
-step 2: nand-sata-install
